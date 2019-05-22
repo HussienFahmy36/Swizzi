@@ -10,20 +10,30 @@ import Foundation
 
 internal class SwizziConfigurationManager {
 
-    func configureFromFile(with bundle: Bundle) -> SwizziConfiguration?{
+    static let shared = SwizziConfigurationManager()
+    private var configuration: SwizziConfiguration = SwizziConfiguration()
 
-        let fileManager = SwizziFileManager()
+    private init() {
+
+    }
+
+    private init(bundle: Bundle) {
+
+    }
+
+    public func configureFromFile(with bundle: Bundle) {
+        let fileManager = SwizziDataLoader()
         let parseManager = SwizziParseManager()
         let configurationFile = "SwizziConfiguration"
         guard let data = fileManager.loadData(from: bundle,
                                               with: configurationFile,
                                               andExt: .json) else {
-                                                return nil
+                                                return
         }
         guard let configurationFromFile = parseManager.parse(data: data,
                                                              to: SwizziConfiguration.self) else {
-                                                                return nil
+                                                                return
         }
-        return configurationFromFile
+        configuration = configurationFromFile
     }
 }

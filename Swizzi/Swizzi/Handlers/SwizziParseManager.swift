@@ -10,7 +10,6 @@ import Foundation
 
 class SwizziParseManager {
     func parse<T: Codable>(data: Data?, to target: T.Type) -> T? {
-
         let decoder = JSONDecoder()
         guard let dataToParse = data else {
             return nil

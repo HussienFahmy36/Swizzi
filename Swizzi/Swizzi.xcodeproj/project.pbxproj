@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AB786D52295629A00813A21 /* SwizziDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB786D42295629A00813A21 /* SwizziDataLoaderTests.swift */; };
+		3AB786DA2295897C00813A21 /* SwizziCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB786D92295897C00813A21 /* SwizziCache.swift */; };
+		3AB786DF22958C0C00813A21 /* SwizziDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F96822934973002423D4 /* SwizziDataLoader.swift */; };
+		3AB786E422958D2A00813A21 /* SwizziCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB786E322958D2A00813A21 /* SwizziCacheManager.swift */; };
+		3AB786E522958D2A00813A21 /* SwizziCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB786E322958D2A00813A21 /* SwizziCacheManager.swift */; };
 		3AF7F94722933BBB002423D4 /* Swizzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF7F93D22933BBB002423D4 /* Swizzi.framework */; };
 		3AF7F94C22933BBB002423D4 /* SwizziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F94B22933BBB002423D4 /* SwizziTests.swift */; };
 		3AF7F94E22933BBB002423D4 /* Swizzi.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF7F94022933BBB002423D4 /* Swizzi.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,8 +23,7 @@
 		3AF7F96322934033002423D4 /* Swizzi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F96122934033002423D4 /* Swizzi.swift */; };
 		3AF7F96622934326002423D4 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F96522934326002423D4 /* ErrorHandler.swift */; };
 		3AF7F96722934326002423D4 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F96522934326002423D4 /* ErrorHandler.swift */; };
-		3AF7F96922934973002423D4 /* SwizziFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F96822934973002423D4 /* SwizziFileManager.swift */; };
-		3AF7F96A22934973002423D4 /* SwizziFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F96822934973002423D4 /* SwizziFileManager.swift */; };
+		3AF7F96922934973002423D4 /* SwizziDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F96822934973002423D4 /* SwizziDataLoader.swift */; };
 		3AF7F979229352C1002423D4 /* SwizziParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F978229352C1002423D4 /* SwizziParseManager.swift */; };
 		3AF7F97A229352C1002423D4 /* SwizziParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F978229352C1002423D4 /* SwizziParseManager.swift */; };
 		3AF7F97C22935EE1002423D4 /* SwizziConfigurationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7F97B22935EE1002423D4 /* SwizziConfigurationManagerTests.swift */; };
@@ -38,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3AB786D42295629A00813A21 /* SwizziDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziDataLoaderTests.swift; sourceTree = "<group>"; };
+		3AB786D92295897C00813A21 /* SwizziCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziCache.swift; sourceTree = "<group>"; };
+		3AB786E322958D2A00813A21 /* SwizziCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziCacheManager.swift; sourceTree = "<group>"; };
 		3AF7F93D22933BBB002423D4 /* Swizzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swizzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF7F94022933BBB002423D4 /* Swizzi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swizzi.h; sourceTree = "<group>"; };
 		3AF7F94122933BBB002423D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +55,7 @@
 		3AF7F95D22933EDB002423D4 /* SwizziConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziConfiguration.swift; sourceTree = "<group>"; };
 		3AF7F96122934033002423D4 /* Swizzi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzi.swift; sourceTree = "<group>"; };
 		3AF7F96522934326002423D4 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
-		3AF7F96822934973002423D4 /* SwizziFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziFileManager.swift; sourceTree = "<group>"; };
+		3AF7F96822934973002423D4 /* SwizziDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziDataLoader.swift; sourceTree = "<group>"; };
 		3AF7F978229352C1002423D4 /* SwizziParseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziParseManager.swift; sourceTree = "<group>"; };
 		3AF7F97B22935EE1002423D4 /* SwizziConfigurationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziConfigurationManagerTests.swift; sourceTree = "<group>"; };
 		3AF7F97D22935F2A002423D4 /* SwizziConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziConfigurationManager.swift; sourceTree = "<group>"; };
@@ -73,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AB786DB2295899600813A21 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7F96822934973002423D4 /* SwizziDataLoader.swift */,
+				3AB786D92295897C00813A21 /* SwizziCache.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3AF7F93322933BBB002423D4 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +110,7 @@
 		3AF7F93F22933BBB002423D4 /* Swizzi */ = {
 			isa = PBXGroup;
 			children = (
+				3AB786DB2295899600813A21 /* Utils */,
 				3AF7F96E22934FE2002423D4 /* Protocols */,
 				3AF7F964229342F3002423D4 /* Handlers */,
 				3AF7F95C22933EBD002423D4 /* Controller */,
@@ -113,6 +130,7 @@
 				3AF7F94B22933BBB002423D4 /* SwizziTests.swift */,
 				3AF7F94D22933BBB002423D4 /* Info.plist */,
 				3AF7F97B22935EE1002423D4 /* SwizziConfigurationManagerTests.swift */,
+				3AB786D42295629A00813A21 /* SwizziDataLoaderTests.swift */,
 			);
 			path = SwizziTests;
 			sourceTree = "<group>";
@@ -143,9 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				3AF7F96522934326002423D4 /* ErrorHandler.swift */,
-				3AF7F96822934973002423D4 /* SwizziFileManager.swift */,
 				3AF7F978229352C1002423D4 /* SwizziParseManager.swift */,
 				3AF7F97D22935F2A002423D4 /* SwizziConfigurationManager.swift */,
+				3AB786E322958D2A00813A21 /* SwizziCacheManager.swift */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
@@ -269,9 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF7F97E22935F2A002423D4 /* SwizziConfigurationManager.swift in Sources */,
+				3AB786DA2295897C00813A21 /* SwizziCache.swift in Sources */,
 				3AF7F96622934326002423D4 /* ErrorHandler.swift in Sources */,
-				3AF7F96922934973002423D4 /* SwizziFileManager.swift in Sources */,
+				3AF7F96922934973002423D4 /* SwizziDataLoader.swift in Sources */,
 				3AF7F95E22933EDB002423D4 /* SwizziConfiguration.swift in Sources */,
+				3AB786E422958D2A00813A21 /* SwizziCacheManager.swift in Sources */,
 				3AF7F96222934033002423D4 /* Swizzi.swift in Sources */,
 				3AF7F979229352C1002423D4 /* SwizziParseManager.swift in Sources */,
 			);
@@ -282,10 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF7F97A229352C1002423D4 /* SwizziParseManager.swift in Sources */,
-				3AF7F96A22934973002423D4 /* SwizziFileManager.swift in Sources */,
 				3AF7F96322934033002423D4 /* Swizzi.swift in Sources */,
+				3AB786D52295629A00813A21 /* SwizziDataLoaderTests.swift in Sources */,
 				3AF7F96722934326002423D4 /* ErrorHandler.swift in Sources */,
 				3AF7F97F22935F2A002423D4 /* SwizziConfigurationManager.swift in Sources */,
+				3AB786E522958D2A00813A21 /* SwizziCacheManager.swift in Sources */,
+				3AB786DF22958C0C00813A21 /* SwizziDataLoader.swift in Sources */,
 				3AF7F95F22933EDB002423D4 /* SwizziConfiguration.swift in Sources */,
 				3AF7F97C22935EE1002423D4 /* SwizziConfigurationManagerTests.swift in Sources */,
 				3AF7F94C22933BBB002423D4 /* SwizziTests.swift in Sources */,

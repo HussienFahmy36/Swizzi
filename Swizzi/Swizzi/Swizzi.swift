@@ -10,17 +10,9 @@ import Foundation
 
 
 class Swizzi {
-
-    var configuration = SwizziConfiguration()
-
-    init(with configuration: SwizziConfiguration) {
-        self.configuration = configuration
-    }
-
+    
     init(with bundle: Bundle) {
-        guard let configurationFromFile = SwizziConfigurationManager().configureFromFile(with: bundle) else {
-            return
-        }
-        configuration = configurationFromFile
+        SwizziConfigurationManager.shared.configureFromFile(with: bundle)
     }
+    
 }
