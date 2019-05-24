@@ -15,8 +15,22 @@ class SwizziFileManager {
     let parser = SwizziParser()
 
     var cachedItemsKeys: [String: Int] = [:]
-    func load(from url: URL, completionHandler: @escaping (Data?)->()) {
-
+    func loadFile(from url: URL, maxSizeInMB: Int, completionHandler: @escaping (Data?)->()) {
+        dataLoader.loadDataAsync(from: url) {[weak self] (data) in
+            guard let `self` = self else {
+                completionHandler(nil)
+                return
+            }
+            let dataSizeInMB = (data?.count ?? 0) / 1_024 / 1_024
+            if dataSizeInMB < maxSizeInMB {
+                if self.storeInMemory(data: data, urlString: url.absoluteString) {
+                    completionHandler(data)
+                }
+            } else {
+                completionHandler(nil)
+            }
+            self.dataLoader.clearCache()
+        }
     }
 
     func loadJson<T: Codable>(from url: URL,

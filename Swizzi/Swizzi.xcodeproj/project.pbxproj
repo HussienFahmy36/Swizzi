@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A054F8322980B460047196E /* SwizziFileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A054F8222980B460047196E /* SwizziFileManagerTests.swift */; };
 		3AAC99F722975D0300EAAD5A /* SwizziCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC99F622975D0300EAAD5A /* SwizziCacheTests.swift */; };
 		3AAC99F822975D1600EAAD5A /* SwizziCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB786D92295897C00813A21 /* SwizziCache.swift */; };
 		3AAC99FB22976A2700EAAD5A /* SwizziFileManager+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC99FA22976A2700EAAD5A /* SwizziFileManager+Json.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A054F8222980B460047196E /* SwizziFileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziFileManagerTests.swift; sourceTree = "<group>"; };
 		3AAC99F622975D0300EAAD5A /* SwizziCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziCacheTests.swift; sourceTree = "<group>"; };
 		3AAC99FA22976A2700EAAD5A /* SwizziFileManager+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwizziFileManager+Json.swift"; sourceTree = "<group>"; };
 		3AB786D42295629A00813A21 /* SwizziDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziDataLoaderTests.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				3AF7F97B22935EE1002423D4 /* SwizziConfigurationManagerTests.swift */,
 				3AB786D42295629A00813A21 /* SwizziDataLoaderTests.swift */,
 				3AAC99F622975D0300EAAD5A /* SwizziCacheTests.swift */,
+				3A054F8222980B460047196E /* SwizziFileManagerTests.swift */,
 			);
 			path = SwizziTests;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF7F97A229352C1002423D4 /* SwizziParser.swift in Sources */,
+				3A054F8322980B460047196E /* SwizziFileManagerTests.swift in Sources */,
 				3AF7F96322934033002423D4 /* Swizzi.swift in Sources */,
 				3AB786D52295629A00813A21 /* SwizziDataLoaderTests.swift in Sources */,
 				3AAC99FC22976C4900EAAD5A /* SwizziFileManager+Json.swift in Sources */,
