@@ -12,14 +12,6 @@ class SwizziDataLoaderTests: XCTestCase {
 
     let dataLoader = SwizziDataLoader()
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func testsLoadDataFromURLSync() {
         let urlString = "http://www.africau.edu/images/default/sample.pdf"
         guard let sampleURL = URL.init(string: urlString) else {
@@ -27,7 +19,6 @@ class SwizziDataLoaderTests: XCTestCase {
             return
         }
         XCTAssertNotNil(dataLoader.loadDataSync(from: sampleURL))
-
     }
 
     func testsLoadDataFromURLAsync() {
@@ -39,7 +30,8 @@ class SwizziDataLoaderTests: XCTestCase {
         let expectation = self.expectation(description: "Loading sample file async")
         dataLoader.loadDataAsync(from: sampleURL) { (data) in
             expectation.fulfill()
-            XCTAssertNotNil(data)
+            XCTAssertNotNil(data, "Loaded data is not nil")
+            XCTAssertTrue(!data!.isEmpty, "Loaded sucesfully from sample url: \(urlString)")
         }
         waitForExpectations(timeout: 10, handler: nil)
 

@@ -10,43 +10,41 @@ import XCTest
 
 class SwizziConfigurationManagerTests: XCTestCase {
 
-    let configurationManager = SwizziConfigurationManager()
-    var configuredObject: SwizziConfiguration?
+    let configurationManager = SwizziConfigurationManager.shared
+    var configuredObject: SwizziConfiguration = SwizziConfiguration()
 
     override func setUp() {
-        configuredObject = configurationManager.configureFromFile(with: Bundle.init(for: self.classForCoder))
-    }
+        configurationManager.configureFromFile(with: Bundle.init(for: self.classForCoder))
+        configuredObject = configurationManager.configuration
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
     func testMaxNumberOfFiles() {
-        XCTAssertEqual(configuredObject?.maxNumberOfFiles, 100)
+        XCTAssertEqual(configuredObject.maxNumberOfFiles, 100)
     }
 
     func testTotalSizeOfCacheInMB() {
-        XCTAssertEqual(configuredObject?.totalSizeOfCacheInMB, 100)
+        XCTAssertEqual(configuredObject.totalSizeOfCacheInMB, 100)
     }
 
     func testMaxFileSizeInMB() {
-        XCTAssertEqual(configuredObject?.maxFileSizeInMB, 20)
+        XCTAssertEqual(configuredObject.maxFileSizeInMB, 20)
     }
 
     func testExpiresIn() {
-        XCTAssertEqual(configuredObject?.expiresInMinutes, 60)
+        XCTAssertEqual(configuredObject.expiresInMinutes, 60)
     }
 
     func testInitialDataSource() {
-        XCTAssertEqual(configuredObject?.initialDataSource, "http://pastebin.com/raw/wgkJgazE")
+        XCTAssertEqual(configuredObject.initialDataSource, "http://pastebin.com/raw/wgkJgazE")
     }
 
     func testEnablePullToRefreshAnimation() {
-        XCTAssertEqual(configuredObject?.enablePullToRefreshAnimation, true)
+        XCTAssertEqual(configuredObject.enablePullToRefreshAnimation, true)
     }
 
     func testEnableTransitionsAnimations() {
-        XCTAssertEqual(configuredObject?.enableTransitionsAnimations, true)
+        XCTAssertEqual(configuredObject.enableTransitionsAnimations, true)
     }
 
 

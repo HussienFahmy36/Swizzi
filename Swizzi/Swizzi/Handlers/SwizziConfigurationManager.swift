@@ -11,29 +11,27 @@ import Foundation
 internal class SwizziConfigurationManager {
 
     static let shared = SwizziConfigurationManager()
-    private var configuration: SwizziConfiguration = SwizziConfiguration()
+    public var configuration: SwizziConfiguration = SwizziConfiguration()
 
     private init() {
 
     }
 
-    private init(bundle: Bundle) {
-
-    }
-
     public func configureFromFile(with bundle: Bundle) {
-        let fileManager = SwizziDataLoader()
-        let parseManager = SwizziParseManager()
+        let fileManager = SwizziFileManager()
         let configurationFile = "SwizziConfiguration"
-        guard let data = fileManager.loadData(from: bundle,
-                                              with: configurationFile,
-                                              andExt: .json) else {
-                                                return
+        guard let filePath = bundle.path(forResource: configurationFile, ofType: "json") else {
+            return
         }
-        guard let configurationFromFile = parseManager.parse(data: data,
-                                                             to: SwizziConfiguration.self) else {
-                                                                return
+        let fileURL = URL(fileURLWithPath: filePath)
+        fileManager.loadJson(from: fileURL,isAsync: false, targetObject: SwizziConfiguration.self) {[weak self] (object) in
+            guard let `self` = self else {
+                return
+            }
+            if object != nil {
+                self.configuration = object as! SwizziConfiguration
+                return
+            }
         }
-        configuration = configurationFromFile
     }
 }
