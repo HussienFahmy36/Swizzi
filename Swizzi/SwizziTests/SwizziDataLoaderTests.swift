@@ -28,7 +28,7 @@ class SwizziDataLoaderTests: XCTestCase {
             return
         }
         let expectation = self.expectation(description: "Loading sample file async")
-        dataLoader.loadDataAsync(from: sampleURL) { (data) in
+        dataLoader.loadDataAsync(from: sampleURL) { (data, error) in
             expectation.fulfill()
             XCTAssertNotNil(data, "Loaded data is not nil")
             XCTAssertTrue(!data!.isEmpty, "Loaded sucesfully from sample url: \(urlString)")

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1F707E22998020009903C2 /* Swizzi+Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CFC282298DDB700807B3F /* Swizzi+Configure.swift */; };
+		3A1F70802299896A009903C2 /* SwizziErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F707F2299896A009903C2 /* SwizziErrorProtocol.swift */; };
+		3A1F70812299896A009903C2 /* SwizziErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F707F2299896A009903C2 /* SwizziErrorProtocol.swift */; };
+		3A1F708322998994009903C2 /* SwizziError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F708222998994009903C2 /* SwizziError.swift */; };
+		3A1F708422998994009903C2 /* SwizziError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F708222998994009903C2 /* SwizziError.swift */; };
+		3A1F70862299DB2C009903C2 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F70852299DB2C009903C2 /* DownloadOperation.swift */; };
+		3A1F70872299DB2C009903C2 /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F70852299DB2C009903C2 /* DownloadOperation.swift */; };
 		3A6CFC212298C42300807B3F /* SwizziParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CFC202298C42300807B3F /* SwizziParsable.swift */; };
 		3A6CFC232298C43800807B3F /* SwizziParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CFC222298C43800807B3F /* SwizziParser.swift */; };
 		3A6CFC252298C92C00807B3F /* Swizzi+CacheList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CFC242298C92C00807B3F /* Swizzi+CacheList.swift */; };
@@ -43,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A1F707F2299896A009903C2 /* SwizziErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziErrorProtocol.swift; sourceTree = "<group>"; };
+		3A1F708222998994009903C2 /* SwizziError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziError.swift; sourceTree = "<group>"; };
+		3A1F70852299DB2C009903C2 /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
 		3A6CFC202298C42300807B3F /* SwizziParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwizziParsable.swift; sourceTree = "<group>"; };
 		3A6CFC222298C43800807B3F /* SwizziParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziParser.swift; sourceTree = "<group>"; };
 		3A6CFC242298C92C00807B3F /* Swizzi+CacheList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swizzi+CacheList.swift"; sourceTree = "<group>"; };
@@ -87,6 +97,7 @@
 			children = (
 				3A6CFC202298C42300807B3F /* SwizziParsable.swift */,
 				3A6CFC222298C43800807B3F /* SwizziParser.swift */,
+				3A1F707F2299896A009903C2 /* SwizziErrorProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -134,7 +145,6 @@
 				3A6CFC1F2298C42300807B3F /* Protocols */,
 				3AAC99F922976A1000EAAD5A /* extensions */,
 				3AB786DB2295899600813A21 /* Utils */,
-				3AF7F964229342F3002423D4 /* Handlers */,
 				3AF7F95C22933EBD002423D4 /* Controller */,
 				3AF7F95B22933EAE002423D4 /* View */,
 				3AF7F95A22933EA5002423D4 /* Model */,
@@ -161,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				3AF7F95D22933EDB002423D4 /* SwizziConfiguration.swift */,
+				3A1F708222998994009903C2 /* SwizziError.swift */,
+				3A1F70852299DB2C009903C2 /* DownloadOperation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,13 +189,6 @@
 			children = (
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		3AF7F964229342F3002423D4 /* Handlers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +306,14 @@
 				3A6CFC212298C42300807B3F /* SwizziParsable.swift in Sources */,
 				3AF7F96922934973002423D4 /* SwizziDataLoader.swift in Sources */,
 				3AF7F95E22933EDB002423D4 /* SwizziConfiguration.swift in Sources */,
+				3A1F708322998994009903C2 /* SwizziError.swift in Sources */,
 				3A6CFC252298C92C00807B3F /* Swizzi+CacheList.swift in Sources */,
 				3A6CFC232298C43800807B3F /* SwizziParser.swift in Sources */,
 				3AF7F96222934033002423D4 /* Swizzi.swift in Sources */,
 				3A6CFC292298DDB700807B3F /* Swizzi+Configure.swift in Sources */,
+				3A1F70802299896A009903C2 /* SwizziErrorProtocol.swift in Sources */,
 				3AF7F979229352C1002423D4 /* SwizziJsonParser.swift in Sources */,
+				3A1F70862299DB2C009903C2 /* DownloadOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,10 +325,14 @@
 				3AF7F96322934033002423D4 /* Swizzi.swift in Sources */,
 				3A6CFC262298D15700807B3F /* SwizziParser.swift in Sources */,
 				3AB786D52295629A00813A21 /* SwizziDataLoaderTests.swift in Sources */,
+				3A1F70812299896A009903C2 /* SwizziErrorProtocol.swift in Sources */,
 				3A6CFC272298D1B000807B3F /* Swizzi+CacheList.swift in Sources */,
+				3A1F707E22998020009903C2 /* Swizzi+Configure.swift in Sources */,
 				3AAC99F822975D1600EAAD5A /* SwizziCache.swift in Sources */,
 				3AAC99F722975D0300EAAD5A /* SwizziCacheTests.swift in Sources */,
+				3A1F70872299DB2C009903C2 /* DownloadOperation.swift in Sources */,
 				3AB786DF22958C0C00813A21 /* SwizziDataLoader.swift in Sources */,
+				3A1F708422998994009903C2 /* SwizziError.swift in Sources */,
 				3AF7F95F22933EDB002423D4 /* SwizziConfiguration.swift in Sources */,
 				3AF7F94C22933BBB002423D4 /* SwizziTests.swift in Sources */,
 			);

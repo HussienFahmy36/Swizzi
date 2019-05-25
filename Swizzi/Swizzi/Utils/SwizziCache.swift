@@ -42,7 +42,7 @@ class SwizziCache {
         return false
     }
 
-    func cachedItemsSizeInMB() -> Int {
+    func cachedItemsSize() -> Int {
         var size = 0
         for item in datatems {
             size += item.itemData?.count ?? 0

@@ -16,7 +16,9 @@ extension Swizzi {
         }
         let fileURL = URL(fileURLWithPath: filePath)
         let swizziJsonParser = SwizziJsonParser()
-        let data = downloadSync(from: fileURL)
-        configuration = swizziJsonParser.parse(data: data, to: SwizziConfiguration.self)
+        let result = downloadSync(from: fileURL, needsChecks: false)
+        if result.0 != nil {
+            configuration = swizziJsonParser.parse(data: result.0, to: SwizziConfiguration.self)
+        }
     }
 }

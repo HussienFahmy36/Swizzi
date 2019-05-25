@@ -16,47 +16,60 @@ class Swizzi {
     internal let parser = SwizziJsonParser()
     internal var configuration: SwizziConfiguration?
     internal var cachedItemsKeys: [String: Int] = [:]
-
+    internal var donwloadOperations: [Operation] = []
+    internal var queue = OperationQueue()
     //MARK: - framework API
     init(with configurationFileBundle: Bundle) {
         configureFromFile(with: configurationFileBundle)
     }
 
-    public func downloadAsync(from url: URL,  completionHandler: @escaping (Data?)->()) {
+    public func downloadAsync(from url: URL,  completionHandler: @escaping (Data?, SwizziError?)->()) -> Int {
         if let cachedData = cachedData(with: url) {
             if let expired = isExpired(url: url), !expired {
-                completionHandler(cachedData)
+                completionHandler(cachedData, nil)
             }
         } else {
-            dataLoader.loadDataAsync(from: url) {[weak self] (data) in
-                guard let `self` = self else {
-                    completionHandler(nil)
+            let operation = DownloadOperation(url: url) { (data, error) in
+                if error != nil {
+                    completionHandler(nil, error)
                     return
                 }
-                if self.cacheFile(with: data, url: url) {
-                    completionHandler(data)
+                if let cacheError = self.cacheFile(with: data, url: url) {
+                    completionHandler(nil, cacheError)
                 } else {
-                    completionHandler(nil)
+                    completionHandler(data, nil)
                 }
-                self.dataLoader.clearCache()
             }
+            queue.addOperation(operation)
+            return operation.operationID
         }
-
+        return 0
     }
 
-    public func downloadSync(from url: URL) -> Data? {
+    public func cancelDownload(operationID: Int) {
+        if let operation = queue.operations.filter({($0 as? DownloadOperation)?.operationID == operationID}).first {
+            operation.cancel()
+        }
+    }
+
+    public func downloadSync(from url: URL, needsChecks: Bool = true) -> (Data?, SwizziError?) {
         if let cachedData = cachedData(with: url) {
             if let expired = isExpired(url: url), !expired {
-                return cachedData
+                return (cachedData, nil)
             }
-        }
-        else {
+        } else {
             let data = dataLoader.loadDataSync(from: url)
-            if cacheFile(with: data, url: url) {
-                dataLoader.clearCache()
-                return data
+            if !needsChecks {
+                return cacheWithoutChecks(with: data, url: url) ? (data, nil) : (nil, nil)
+            } else {
+                if let error = cacheFile(with: data, url: url) {
+                    return (nil, error)
+                }
+                else {
+                    return (data, nil)
+                }
             }
         }
-        return nil
+        return (nil, nil)
     }
 }

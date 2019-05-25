@@ -10,18 +10,31 @@ import Foundation
 
 extension Swizzi {
 
-    internal func cacheFile(with data: Data?, url: URL) -> Bool {
-        if cachedData(with: url) == nil {
-            if isSizeAllowed(data: data) &&
-                isCountAllowed() &&
-                totalSizeAfterDataAdd(data: data) {
-                if let cachedItem = cache.cache(data: data) {
-                    cachedItemsKeys[url.absoluteString] = cachedItem.ID
-                    return true
-                }
-            }
+    internal func cacheWithoutChecks(with data: Data?, url: URL) -> Bool {
+        if let cachedItem = cache.cache(data: data) {
+            cachedItemsKeys[url.absoluteString] = cachedItem.ID
+            return true
         }
         return false
+    }
+
+    internal func cacheFile(with data: Data?, url: URL) -> SwizziError? {
+        var error: SwizziError?
+        if cachedData(with: url) == nil {
+            if isSizeAllowed(data: data) {
+                if isCountAllowed() {
+                    if totalSizeAfterDataAdd(data: data) {
+                        if let cachedItem = cache.cache(data: data) {
+                            cachedItemsKeys[url.absoluteString] = cachedItem.ID
+                            return error
+                        }
+                    } else {error = SwizziError(title: .cacheIsFull, code: .cacheIsFull)}
+                } else {error = SwizziError(title: .maxNumberOfFilesReached, code: .maxNumberOfFilesReached)}
+
+            } else {error = SwizziError(title: .fileSizeExceedsLimit, code: .fileSizeExceedsLimit)}
+        }
+        if error != nil {dataLoader.clearCache()}
+        return error
     }
 
     internal func cachedData(with url: URL) -> Data? {
@@ -45,12 +58,12 @@ extension Swizzi {
     }
 
     internal func isCountAllowed() -> Bool{
-        return (cachedItemsKeys.count + 1) < configuration?.maxNumberOfFiles ?? 0
+        return (cachedItemsKeys.count + 1) < ((configuration?.maxNumberOfFiles ?? 0) + 1)
     }
 
     internal func totalSizeAfterDataAdd(data: Data?) -> Bool{
-        let dataSizeInMB = (data?.count ?? 0) / 1_024 / 1_024
-        return (dataSizeInMB + cache.cachedItemsSizeInMB()) < configuration?.totalSizeOfCacheInMB ?? 0
+        let dataSizeInMB = ((data?.count ?? 0) + cache.cachedItemsSize()) / 1_024 / 1_024
+        return dataSizeInMB < (configuration?.totalSizeOfCacheInMB ?? 0)
     }
 
     internal func isExpired(url: URL) -> Bool? {
