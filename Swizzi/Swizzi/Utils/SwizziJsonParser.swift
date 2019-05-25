@@ -1,5 +1,5 @@
 //
-//  SwizziParseManager.swift
+//  SwizziJsonParser.swift
 //  Swizzi
 //
 //  Created by Hussien Gamal Mohammed on 5/20/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SwizziParser {
+public class SwizziJsonParser: SwizziParser {
     func parse<T: Codable>(data: Data?, to target: T.Type) -> T? {
         let decoder = JSONDecoder()
         guard let dataToParse = data else {

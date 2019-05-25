@@ -9,5 +9,4 @@
 import Foundation
 
 public protocol SwizziParsable {
-    func parse(dictionary: [String: Any]) -> SwizziBaseModel?
 }

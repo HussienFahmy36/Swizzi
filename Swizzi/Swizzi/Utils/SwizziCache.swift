@@ -8,27 +8,46 @@
 
 import Foundation
 
-struct DataItem {
+struct CachableDataItem {
     var itemData: Data?
     var ID: Int = 0
+    var dateReceived: Date
 }
 
 class SwizziCache {
 
-    private var datatems: [DataItem] = []
+    private var datatems: [CachableDataItem] = []
 
-    func cache(data: Data?) -> Int? {
+    func cache(data: Data?) -> CachableDataItem? {
         if data != nil {
             let randomId = Int.random(in: 0..<Int(RAND_MAX))
-            let cacheItem = DataItem(itemData: data, ID: randomId)
+            let cacheItem = CachableDataItem(itemData: data, ID: randomId, dateReceived: Date())
             datatems.append(cacheItem)
-            return randomId
+            return cacheItem
         }
         return nil
     }
 
-    func get(itemId: Int) -> Data? {
-        return datatems.filter({$0.ID == itemId}).first?.itemData
+    func get(itemId: Int) -> CachableDataItem? {
+        return datatems.filter({$0.ID == itemId}).first
+    }
+
+    func delete(itemId: Int) -> Bool {
+        for (index, item) in datatems.enumerated() {
+            if item.ID == itemId {
+                datatems.remove(at: index)
+                return true
+            }
+        }
+        return false
+    }
+
+    func cachedItemsSizeInMB() -> Int {
+        var size = 0
+        for item in datatems {
+            size += item.itemData?.count ?? 0
+        }
+        return size
     }
 }
 

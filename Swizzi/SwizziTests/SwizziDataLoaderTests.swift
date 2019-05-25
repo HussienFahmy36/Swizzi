@@ -22,7 +22,7 @@ class SwizziDataLoaderTests: XCTestCase {
     }
 
     func testsLoadDataFromURLAsync() {
-        let urlString = "http://www.africau.edu/images/default/sample.pdf"
+        let urlString = "http://pastebin.com/raw/wgkJgazE"
         guard let sampleURL = URL.init(string: urlString) else {
             XCTFail("URL not valid")
             return
