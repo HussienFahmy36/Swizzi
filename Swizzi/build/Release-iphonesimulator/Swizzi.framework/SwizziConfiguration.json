@@ -1,0 +1,9 @@
+{
+"maxNumberOfFiles": 5,
+"totalSizeOfCacheInMB": 100,
+"maxFileSizeInMB": 20,
+"expiresInMinutes": 60,
+"initialDataSource": "http://pastebin.com/raw/wgkJgazE",
+"enablePullToRefreshAnimation": true,
+"enableTransitionsAnimations": true
+}
