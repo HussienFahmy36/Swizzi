@@ -28,7 +28,21 @@ internal class SwizziDataLoader {
             }
             let receivedDataAsString = receivedData.base64EncodedString()
             let receivedDataAfterConvert = Data(base64Encoded: receivedDataAsString)
-            dataReceived(receivedDataAfterConvert, nil)
+            if let httpURLResponse = (response as? HTTPURLResponse) {
+                if httpURLResponse.statusCode == 200 {
+                    dataReceived(receivedDataAfterConvert, nil)
+                }
+                else {
+                    if httpURLResponse.statusCode == 404 {
+                        dataReceived(receivedDataAfterConvert, SwizziError(title: .urlNotFound, code: .urlNotFound))
+                    } else {
+                        dataReceived(nil, SwizziError(title: .dataIsNil, code: .dataIsNil))
+                    }
+                }
+            }
+            else {
+                dataReceived(nil, SwizziError(title: .noResponse, code: .noResponse))
+            }
         }
         task?.resume()
 

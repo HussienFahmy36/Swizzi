@@ -1,5 +1,5 @@
 {
-"maxNumberOfFiles": 5,
+"maxNumberOfFiles": 100,
 "totalSizeOfCacheInMB": 100,
 "maxFileSizeInMB": 20,
 "expiresInMinutes": 60,

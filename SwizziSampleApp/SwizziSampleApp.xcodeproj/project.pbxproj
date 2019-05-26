@@ -8,15 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3AC9A938229AEBF700178151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9A937229AEBF700178151 /* AppDelegate.swift */; };
-		3AC9A93A229AEBF700178151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9A939229AEBF700178151 /* ViewController.swift */; };
+		3AC9A93A229AEBF700178151 /* PinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9A939229AEBF700178151 /* PinsViewController.swift */; };
 		3AC9A93D229AEBF700178151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9A93B229AEBF700178151 /* Main.storyboard */; };
 		3AC9A93F229AEBF800178151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9A93E229AEBF800178151 /* Assets.xcassets */; };
 		3AC9A942229AEBF800178151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9A940229AEBF800178151 /* LaunchScreen.storyboard */; };
 		3AC9A94D229AEBF800178151 /* SwizziSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9A94C229AEBF800178151 /* SwizziSampleAppTests.swift */; };
 		3AC9A95E229AECCA00178151 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9A95D229AECCA00178151 /* PhotoModel.swift */; };
 		3AC9A960229AECD600178151 /* SwizziConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9A95F229AECD600178151 /* SwizziConfiguration.json */; };
-		3AC9A962229B233200178151 /* Swizzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC9A961229B233200178151 /* Swizzi.framework */; };
-		3AD8131D229B24F500E6731C /* Swizzi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC9A961229B233200178151 /* Swizzi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AD81320229B268800E6731C /* PinCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8131F229B268800E6731C /* PinCardCell.swift */; };
+		3AD81328229B3A6A00E6731C /* Swizzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD81327229B3A6A00E6731C /* Swizzi.framework */; };
+		3AD8132A229B3A7300E6731C /* Swizzi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD81327229B3A6A00E6731C /* Swizzi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AD8132D229B425500E6731C /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8132C229B425500E6731C /* PinterestLayout.swift */; };
+		3AD81330229B432700E6731C /* PinterestLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8132F229B432700E6731C /* PinterestLayoutDelegate.swift */; };
+		3AD81333229B43FC00E6731C /* CardsViewController+PinteresetLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD81332229B43FC00E6731C /* CardsViewController+PinteresetLayoutDelegate.swift */; };
+		3AD81335229B55C400E6731C /* PinImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD81334229B55C400E6731C /* PinImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3AD8131D229B24F500E6731C /* Swizzi.framework in Embed Frameworks */,
+				3AD8132A229B3A7300E6731C /* Swizzi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +51,7 @@
 /* Begin PBXFileReference section */
 		3AC9A934229AEBF700178151 /* SwizziSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwizziSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC9A937229AEBF700178151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3AC9A939229AEBF700178151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AC9A939229AEBF700178151 /* PinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsViewController.swift; sourceTree = "<group>"; };
 		3AC9A93C229AEBF700178151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AC9A93E229AEBF800178151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AC9A941229AEBF800178151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +62,12 @@
 		3AC9A957229AEC0F00178151 /* Swizzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swizzi.framework; path = "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/SwizziSampleApp/SwizziSampleApp/Swizzi.framework"; sourceTree = "<absolute>"; };
 		3AC9A95D229AECCA00178151 /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		3AC9A95F229AECD600178151 /* SwizziConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SwizziConfiguration.json; sourceTree = "<group>"; };
-		3AC9A961229B233200178151 /* Swizzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swizzi.framework; sourceTree = "<group>"; };
+		3AD8131F229B268800E6731C /* PinCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCardCell.swift; sourceTree = "<group>"; };
+		3AD81327229B3A6A00E6731C /* Swizzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swizzi.framework; sourceTree = "<group>"; };
+		3AD8132C229B425500E6731C /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		3AD8132F229B432700E6731C /* PinterestLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayoutDelegate.swift; sourceTree = "<group>"; };
+		3AD81332229B43FC00E6731C /* CardsViewController+PinteresetLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardsViewController+PinteresetLayoutDelegate.swift"; sourceTree = "<group>"; };
+		3AD81334229B55C400E6731C /* PinImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC9A962229B233200178151 /* Swizzi.framework in Frameworks */,
+				3AD81328229B3A6A00E6731C /* Swizzi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +111,9 @@
 		3AC9A936229AEBF700178151 /* SwizziSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AD81331229B43E200E6731C /* Extensions */,
+				3AD8132E229B430F00E6731C /* Protcols */,
+				3AD8132B229B423500E6731C /* Layouts */,
 				3AD8131B229B24A000E6731C /* Controller */,
 				3AD8131A229B248800E6731C /* Frameworks */,
 				3AD81319229B246700E6731C /* Supporting files */,
@@ -158,7 +171,7 @@
 		3AD8131A229B248800E6731C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3AC9A961229B233200178151 /* Swizzi.framework */,
+				3AD81327229B3A6A00E6731C /* Swizzi.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -166,9 +179,35 @@
 		3AD8131B229B24A000E6731C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3AC9A939229AEBF700178151 /* ViewController.swift */,
+				3AC9A939229AEBF700178151 /* PinsViewController.swift */,
+				3AD8131F229B268800E6731C /* PinCardCell.swift */,
+				3AD81334229B55C400E6731C /* PinImageViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AD8132B229B423500E6731C /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				3AD8132C229B425500E6731C /* PinterestLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		3AD8132E229B430F00E6731C /* Protcols */ = {
+			isa = PBXGroup;
+			children = (
+				3AD8132F229B432700E6731C /* PinterestLayoutDelegate.swift */,
+			);
+			path = Protcols;
+			sourceTree = "<group>";
+		};
+		3AD81331229B43E200E6731C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AD81332229B43FC00E6731C /* CardsViewController+PinteresetLayoutDelegate.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AC9A93A229AEBF700178151 /* ViewController.swift in Sources */,
+				3AD81335229B55C400E6731C /* PinImageViewController.swift in Sources */,
+				3AD81333229B43FC00E6731C /* CardsViewController+PinteresetLayoutDelegate.swift in Sources */,
+				3AD8132D229B425500E6731C /* PinterestLayout.swift in Sources */,
+				3AC9A93A229AEBF700178151 /* PinsViewController.swift in Sources */,
 				3AC9A938229AEBF700178151 /* AppDelegate.swift in Sources */,
+				3AD81330229B432700E6731C /* PinterestLayoutDelegate.swift in Sources */,
+				3AD81320229B268800E6731C /* PinCardCell.swift in Sources */,
 				3AC9A95E229AECCA00178151 /* PhotoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
