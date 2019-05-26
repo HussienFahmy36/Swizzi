@@ -1,0 +1,273 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ErrorMessages"
+- "ErrorCodes"
+- "SwizziError"
+provides-nominal:
+- "6Swizzi13ErrorMessagesO"
+- "6Swizzi10ErrorCodesO"
+- "6Swizzi0A5ErrorV"
+provides-member:
+- ["6Swizzi13ErrorMessagesO", ""]
+- ["6Swizzi10ErrorCodesO", ""]
+- ["6Swizzi0A5ErrorV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "Array"
+- "ErrorCodes"
+- "ErrorMessages"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- "SwizziError"
+- "SwizziErrorProtocol"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- ["SE", "init"]
+- ["SE", "init"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- ["SQ", "rawValue"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "code"]
+- ["s5ErrorP", "errorDescription"]
+- ["s5ErrorP", "failureReason"]
+- ["s5ErrorP", "helpAnchor"]
+- ["s5ErrorP", "recoverySuggestion"]
+- ["s5ErrorP", "title"]
+- ["6Swizzi10ErrorCodesO", "RawValue"]
+- ["6Swizzi10ErrorCodesO", "_Default_RawValue"]
+- ["6Swizzi10ErrorCodesO", "cacheIsFull"]
+- ["6Swizzi10ErrorCodesO", "dataIsNil"]
+- ["6Swizzi10ErrorCodesO", "deinit"]
+- ["6Swizzi10ErrorCodesO", "fileSizeExceedsLimit"]
+- ["6Swizzi10ErrorCodesO", "hash"]
+- ["6Swizzi10ErrorCodesO", "hashValue"]
+- ["6Swizzi10ErrorCodesO", "init"]
+- ["6Swizzi10ErrorCodesO", "maxNumberOfFilesReached"]
+- ["6Swizzi10ErrorCodesO", "parse"]
+- ["6Swizzi10ErrorCodesO", "rawValue"]
+- ["6Swizzi10ErrorCodesO", "runtime"]
+- ["6Swizzi13ErrorMessagesO", "RawValue"]
+- ["6Swizzi13ErrorMessagesO", "_Default_RawValue"]
+- !private ["6Swizzi13ErrorMessagesO", "_findStringSwitchCase"]
+- ["6Swizzi13ErrorMessagesO", "cacheIsFull"]
+- ["6Swizzi13ErrorMessagesO", "dataIsNil"]
+- ["6Swizzi13ErrorMessagesO", "deinit"]
+- ["6Swizzi13ErrorMessagesO", "fileSizeExceedsLimit"]
+- ["6Swizzi13ErrorMessagesO", "hash"]
+- ["6Swizzi13ErrorMessagesO", "hashValue"]
+- ["6Swizzi13ErrorMessagesO", "init"]
+- ["6Swizzi13ErrorMessagesO", "maxNumberOfFilesReached"]
+- ["6Swizzi13ErrorMessagesO", "parse"]
+- ["6Swizzi13ErrorMessagesO", "rawValue"]
+- ["6Swizzi13ErrorMessagesO", "runtime"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "init"]
+- ["SH", "rawValue"]
+- !private ["s6HasherV", "combine"]
+- ["10Foundation14LocalizedErrorP", ""]
+- ["10Foundation14LocalizedErrorP", "_code"]
+- ["10Foundation14LocalizedErrorP", "_domain"]
+- ["10Foundation14LocalizedErrorP", "_getEmbeddedNSError"]
+- ["10Foundation14LocalizedErrorP", "_userInfo"]
+- ["10Foundation14LocalizedErrorP", "code"]
+- ["10Foundation14LocalizedErrorP", "errorDescription"]
+- ["10Foundation14LocalizedErrorP", "failureReason"]
+- ["10Foundation14LocalizedErrorP", "helpAnchor"]
+- ["10Foundation14LocalizedErrorP", "recoverySuggestion"]
+- ["10Foundation14LocalizedErrorP", "title"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["6Swizzi0A5ErrorV", "ErrorCodes"]
+- ["6Swizzi0A5ErrorV", "ErrorMessages"]
+- ["6Swizzi0A5ErrorV", "_code"]
+- ["6Swizzi0A5ErrorV", "_domain"]
+- ["6Swizzi0A5ErrorV", "_getEmbeddedNSError"]
+- ["6Swizzi0A5ErrorV", "_userInfo"]
+- ["6Swizzi0A5ErrorV", "code"]
+- ["6Swizzi0A5ErrorV", "deinit"]
+- ["6Swizzi0A5ErrorV", "errorDescription"]
+- ["6Swizzi0A5ErrorV", "failureReason"]
+- ["6Swizzi0A5ErrorV", "helpAnchor"]
+- ["6Swizzi0A5ErrorV", "init"]
+- ["6Swizzi0A5ErrorV", "recoverySuggestion"]
+- ["6Swizzi0A5ErrorV", "title"]
+- ["6Swizzi0A13ErrorProtocolP", ""]
+- ["6Swizzi0A13ErrorProtocolP", "_code"]
+- ["6Swizzi0A13ErrorProtocolP", "_domain"]
+- ["6Swizzi0A13ErrorProtocolP", "_getEmbeddedNSError"]
+- ["6Swizzi0A13ErrorProtocolP", "_userInfo"]
+- ["6Swizzi0A13ErrorProtocolP", "code"]
+- ["6Swizzi0A13ErrorProtocolP", "errorDescription"]
+- ["6Swizzi0A13ErrorProtocolP", "failureReason"]
+- ["6Swizzi0A13ErrorProtocolP", "helpAnchor"]
+- ["6Swizzi0A13ErrorProtocolP", "recoverySuggestion"]
+- ["6Swizzi0A13ErrorProtocolP", "title"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "s5ErrorP"
+- "6Swizzi10ErrorCodesO"
+- "6Swizzi13ErrorMessagesO"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- "10Foundation14LocalizedErrorP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "Sm"
+- "SY"
+- "ST"
+- !private "s12StaticStringV"
+- "SS"
+- "Sy"
+- "6Swizzi0A5ErrorV"
+- "6Swizzi0A13ErrorProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/Swizzi/Swizzi/Swizzi.h"
+- "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/Swizzi/build/Swizzi.build/Debug-iphonesimulator/Swizzi.build/unextended-module.modulemap"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "a75d7c1d35042fbd8628b858c676ddf3"

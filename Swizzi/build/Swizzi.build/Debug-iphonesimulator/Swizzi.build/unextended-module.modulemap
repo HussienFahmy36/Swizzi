@@ -1,0 +1,10 @@
+framework module Swizzi {
+  umbrella header "Swizzi.h"
+
+  export *
+  module * { export * }
+}
+
+module Swizzi.__Swift {
+    exclude header "Swizzi-Swift.h"
+}

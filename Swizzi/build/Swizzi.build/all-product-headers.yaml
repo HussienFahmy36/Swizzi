@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/hussiengamalmohammed/Library/Developer/Xcode/DerivedData/Swizzi-bbegktydexjxwjctnaxlybonsdll/Build/Products/Debug-iphonesimulator/Swizzi.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Swizzi-Swift.h",
+          'external-contents': "/Users/hussiengamalmohammed/Library/Developer/Xcode/DerivedData/Swizzi-bbegktydexjxwjctnaxlybonsdll/Build/Products/Debug-iphonesimulator/Swizzi.framework/Headers/Swizzi-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Swizzi.h",
+          'external-contents': "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/Swizzi/Swizzi/Swizzi.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/hussiengamalmohammed/Library/Developer/Xcode/DerivedData/Swizzi-bbegktydexjxwjctnaxlybonsdll/Build/Products/Debug-iphonesimulator/Swizzi.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/Swizzi/build/Swizzi.build/Debug-iphonesimulator/Swizzi.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

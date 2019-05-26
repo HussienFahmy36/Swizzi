@@ -1,0 +1,289 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SwizziDataLoader"
+provides-nominal:
+- "6Swizzi0A10DataLoaderC"
+provides-member:
+- ["6Swizzi0A10DataLoaderC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Data"
+- !private "NSMutableURLRequest"
+- !private "StringLiteralType"
+- "SwizziDataLoader"
+- "SwizziError"
+- "URL"
+- "URLSession"
+- !private "URLSessionConfiguration"
+- "URLSessionDataTask"
+depends-member:
+- !private ["SK", "base64EncodedString"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "cancel"]
+- !private ["s7CVarArgP", "dataTask"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "httpMethod"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "reset"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["Sl", "base64EncodedString"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "base64EncodedString"]
+- !private ["s28CustomDebugStringConvertibleP", "cancel"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "reset"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "base64EncodedString"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "base64EncodedString"]
+- !private ["s23CustomStringConvertibleP", "cancel"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "httpMethod"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "reset"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["10Foundation4DataV", "base64EncodedString"]
+- !private ["10Foundation4DataV", "init"]
+- !private ["Se", "base64EncodedString"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["SE", "base64EncodedString"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", "base64EncodedString"]
+- !private ["SQ", "cancel"]
+- !private ["SQ", "dataIsNil"]
+- !private ["SQ", "dataTask"]
+- !private ["SQ", "default"]
+- !private ["SQ", "httpMethod"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "reset"]
+- !private ["SQ", "resume"]
+- !private ["s5ErrorP", "init"]
+- !private ["6Swizzi10ErrorCodesO", "dataIsNil"]
+- !private ["6Swizzi13ErrorMessagesO", "dataIsNil"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "base64EncodedString"]
+- !private ["SH", "cancel"]
+- !private ["SH", "dataIsNil"]
+- !private ["SH", "dataTask"]
+- !private ["SH", "default"]
+- !private ["SH", "httpMethod"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "reset"]
+- !private ["SH", "resume"]
+- !private ["10Foundation14LocalizedErrorP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "base64EncodedString"]
+- !private ["SM", "init"]
+- !private ["So8NSCodingP", "httpMethod"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "cancel"]
+- !private ["So9NSCopyingP", "default"]
+- !private ["So9NSCopyingP", "httpMethod"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "resume"]
+- !private ["So16NSMutableCopyingP", "httpMethod"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So19NSMutableURLRequestC", "httpMethod"]
+- !private ["So19NSMutableURLRequestC", "init"]
+- !private ["So8NSObjectC", "cancel"]
+- !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "httpMethod"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "reset"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectP", "cancel"]
+- !private ["So8NSObjectP", "dataTask"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "httpMethod"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "reset"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So14NSSecureCodingP", "httpMethod"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So12NSURLRequestC", "httpMethod"]
+- !private ["So12NSURLRequestC", "init"]
+- !private ["So19NSProgressReportingP", "cancel"]
+- !private ["So19NSProgressReportingP", "resume"]
+- !private ["Sk", "base64EncodedString"]
+- !private ["Sk", "init"]
+- !private ["Sm", "base64EncodedString"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "dataIsNil"]
+- !private ["10Foundation20ReferenceConvertibleP", "base64EncodedString"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["ST", "base64EncodedString"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- ["6Swizzi0A10DataLoaderC", "Data"]
+- !private ["6Swizzi0A10DataLoaderC", "NSMutableURLRequest"]
+- ["6Swizzi0A10DataLoaderC", "SwizziError"]
+- ["6Swizzi0A10DataLoaderC", "URL"]
+- ["6Swizzi0A10DataLoaderC", "URLSession"]
+- !private ["6Swizzi0A10DataLoaderC", "URLSessionConfiguration"]
+- ["6Swizzi0A10DataLoaderC", "URLSessionDataTask"]
+- ["6Swizzi0A10DataLoaderC", "cancelDownload"]
+- ["6Swizzi0A10DataLoaderC", "clearCache"]
+- ["6Swizzi0A10DataLoaderC", "init"]
+- ["6Swizzi0A10DataLoaderC", "loadDataAsync"]
+- ["6Swizzi0A10DataLoaderC", "loadDataSync"]
+- ["6Swizzi0A10DataLoaderC", "resumeDownload"]
+- !private ["6Swizzi0A10DataLoaderC", "session"]
+- !private ["6Swizzi0A10DataLoaderC", "task"]
+- !private ["6Swizzi0A5ErrorV", "init"]
+- !private ["6Swizzi0A13ErrorProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So12NSURLSessionC", "dataTask"]
+- ["So12NSURLSessionC", "init"]
+- !private ["So12NSURLSessionC", "reset"]
+- !private ["So25NSURLSessionConfigurationC", "default"]
+- !private ["So20NSURLSessionDataTaskC", "cancel"]
+- !private ["So20NSURLSessionDataTaskC", "resume"]
+- !private ["So16NSURLSessionTaskC", "cancel"]
+- !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "httpMethod"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cancel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "httpMethod"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reset"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["s21_ObjectiveCBridgeableP", "base64EncodedString"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "SK"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DataV"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s5ErrorP"
+- !private "6Swizzi10ErrorCodesO"
+- !private "6Swizzi13ErrorMessagesO"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "10Foundation14LocalizedErrorP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So16NSMutableCopyingP"
+- !private "So19NSMutableURLRequestC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So12NSURLRequestC"
+- !private "So19NSProgressReportingP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- "6Swizzi0A10DataLoaderC"
+- !private "6Swizzi0A5ErrorV"
+- !private "6Swizzi0A13ErrorProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So12NSURLSessionC"
+- !private "So25NSURLSessionConfigurationC"
+- !private "So20NSURLSessionDataTaskC"
+- !private "So16NSURLSessionTaskC"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode10.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/Swizzi/Swizzi/Swizzi.h"
+- "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/Swizzi/build/Swizzi.build/Debug-iphonesimulator/Swizzi.build/unextended-module.modulemap"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode10.1.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "2e49cd4c748476e868a298c83bbd2080"
