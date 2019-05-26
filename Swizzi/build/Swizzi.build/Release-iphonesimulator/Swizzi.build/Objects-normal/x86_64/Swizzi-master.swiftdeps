@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "f5656aaa36125e45a5be106c352496f7"
-build_time: [1558869942, 18821000]
+build_time: [1558877501, 729441000]
 inputs:
   "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/Swizzi/Swizzi/Utils/SwizziCache.swift": [9223372036, 854775807]
   "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/Swizzi/Swizzi/Protocols/SwizziParsable.swift": [9223372036, 854775807]

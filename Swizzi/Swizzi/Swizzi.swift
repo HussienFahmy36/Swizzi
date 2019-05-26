@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Swizzi {
+public class Swizzi {
 
     internal let dataLoader = SwizziDataLoader()
     internal let cache = SwizziCache()
@@ -20,7 +20,7 @@ class Swizzi {
     internal var queue = OperationQueue()
     internal var operationCancelled: Bool = false
     //MARK: - framework API
-    init(with configurationFileBundle: Bundle) {
+    public init(with configurationFileBundle: Bundle) {
         configureFromFile(with: configurationFileBundle)
     }
 

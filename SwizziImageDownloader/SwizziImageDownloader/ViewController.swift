@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import Swizzi
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let swizzi = Swizzi(with: Bundle.main)
+
+        let path = Bundle.main.path(forResource: "BaseJson", ofType: "json")
+        swizzi.downloadAsync(from: URL(fileURLWithPath: path!)) { (data, erro) in
+
+            let parser = SwizziJsonParser()
+            let decoder = JSONDecoder()
+            let dataDecoded = try? decoder.decode([PhotoElement].self, from: data!)
+        }
     }
 
 

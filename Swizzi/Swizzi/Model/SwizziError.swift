@@ -34,7 +34,7 @@ enum ErrorCodes: Int {
     case cacheIsFull = 220
     case maxNumberOfFilesReached = 230
 }
-struct SwizziError: SwizziErrorProtocol {
+public struct SwizziError: SwizziErrorProtocol {
     var title: ErrorMessages
     var code: ErrorCodes
 }

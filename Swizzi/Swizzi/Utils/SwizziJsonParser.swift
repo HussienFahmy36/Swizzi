@@ -9,14 +9,20 @@
 import Foundation
 
 public class SwizziJsonParser: SwizziParser {
-    func parse<T: Codable>(data: Data?, to target: T.Type) -> T? {
+    public func parse<T: Codable>(data: Data?, to target: T.Type) -> T? {
         let decoder = JSONDecoder()
         guard let dataToParse = data else {
             return nil
         }
-        guard let decodedData = try? decoder.decode(T.self, from: dataToParse) else {
-            return nil
+        do {
+            let decodedData = try decoder.decode(T.self, from: dataToParse)
+            return decodedData
+        } catch let error {
+            print(error)
         }
-        return decodedData
+        return nil
+    }
+    public init() {
+
     }
 }

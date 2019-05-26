@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal protocol SwizziParser {
+public protocol SwizziParser {
     func parse<T: Codable>(data: Data?, to target: T.Type) -> T?
 
 }

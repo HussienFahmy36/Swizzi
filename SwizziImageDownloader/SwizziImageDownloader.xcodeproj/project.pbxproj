@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1CE88D229ACC7700254714 /* SwizziConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A1CE88C229ACC7700254714 /* SwizziConfiguration.json */; };
+		3A1CE891229AD34200254714 /* BaseJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A1CE890229AD34200254714 /* BaseJson.json */; };
+		3A1CE8A5229AD44B00254714 /* Swizzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1CE8A1229AD43E00254714 /* Swizzi.framework */; };
 		3A2C44C8229AC81E000CED9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C44C7229AC81E000CED9D /* AppDelegate.swift */; };
 		3A2C44CA229AC81E000CED9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C44C9229AC81E000CED9D /* ViewController.swift */; };
 		3A2C44CD229AC81E000CED9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C44CB229AC81E000CED9D /* Main.storyboard */; };
 		3A2C44CF229AC820000CED9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C44CE229AC820000CED9D /* Assets.xcassets */; };
 		3A2C44D2229AC820000CED9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2C44D0229AC820000CED9D /* LaunchScreen.storyboard */; };
 		3A2C44DD229AC820000CED9D /* SwizziImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C44DC229AC820000CED9D /* SwizziImageDownloaderTests.swift */; };
+		3A60BB9C229ADC1E0096B8CC /* SwiftModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A60BB96229ADC1E0096B8CC /* SwiftModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A1CE8A0229AD43E00254714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1CE89B229AD43E00254714 /* Swizzi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AF7F93D22933BBB002423D4;
+			remoteInfo = Swizzi;
+		};
+		3A1CE8A2229AD43E00254714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A1CE89B229AD43E00254714 /* Swizzi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AF7F94622933BBB002423D4;
+			remoteInfo = SwizziTests;
+		};
 		3A2C44D9229AC820000CED9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3A2C44BC229AC81E000CED9D /* Project object */;
@@ -26,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A1CE88C229ACC7700254714 /* SwizziConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SwizziConfiguration.json; sourceTree = "<group>"; };
+		3A1CE890229AD34200254714 /* BaseJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BaseJson.json; sourceTree = "<group>"; };
+		3A1CE89B229AD43E00254714 /* Swizzi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swizzi.xcodeproj; path = ../../Swizzi/Swizzi.xcodeproj; sourceTree = "<group>"; };
 		3A2C44C4229AC81E000CED9D /* SwizziImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwizziImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2C44C7229AC81E000CED9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A2C44C9229AC81E000CED9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +57,7 @@
 		3A2C44D8229AC820000CED9D /* SwizziImageDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwizziImageDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2C44DC229AC820000CED9D /* SwizziImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwizziImageDownloaderTests.swift; sourceTree = "<group>"; };
 		3A2C44DE229AC820000CED9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A60BB96229ADC1E0096B8CC /* SwiftModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1CE8A5229AD44B00254714 /* Swizzi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +79,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A1CE89C229AD43E00254714 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A1CE8A1229AD43E00254714 /* Swizzi.framework */,
+				3A1CE8A3229AD43E00254714 /* SwizziTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A1CE8A4229AD44B00254714 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3A2C44BB229AC81E000CED9D = {
 			isa = PBXGroup;
 			children = (
 				3A2C44C6229AC81E000CED9D /* SwizziImageDownloader */,
 				3A2C44DB229AC820000CED9D /* SwizziImageDownloaderTests */,
 				3A2C44C5229AC81E000CED9D /* Products */,
+				3A1CE8A4229AD44B00254714 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +117,16 @@
 		3A2C44C6229AC81E000CED9D /* SwizziImageDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				3A1CE89B229AD43E00254714 /* Swizzi.xcodeproj */,
+				3A1CE88C229ACC7700254714 /* SwizziConfiguration.json */,
+				3A2C44E7229AC874000CED9D /* Model */,
 				3A2C44C7229AC81E000CED9D /* AppDelegate.swift */,
 				3A2C44C9229AC81E000CED9D /* ViewController.swift */,
 				3A2C44CB229AC81E000CED9D /* Main.storyboard */,
 				3A2C44CE229AC820000CED9D /* Assets.xcassets */,
 				3A2C44D0229AC820000CED9D /* LaunchScreen.storyboard */,
 				3A2C44D3229AC820000CED9D /* Info.plist */,
+				3A1CE890229AD34200254714 /* BaseJson.json */,
 			);
 			path = SwizziImageDownloader;
 			sourceTree = "<group>";
@@ -94,6 +138,14 @@
 				3A2C44DE229AC820000CED9D /* Info.plist */,
 			);
 			path = SwizziImageDownloaderTests;
+			sourceTree = "<group>";
+		};
+		3A2C44E7229AC874000CED9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A60BB96229ADC1E0096B8CC /* SwiftModels.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +216,12 @@
 			mainGroup = 3A2C44BB229AC81E000CED9D;
 			productRefGroup = 3A2C44C5229AC81E000CED9D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3A1CE89C229AD43E00254714 /* Products */;
+					ProjectRef = 3A1CE89B229AD43E00254714 /* Swizzi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3A2C44C3229AC81E000CED9D /* SwizziImageDownloader */,
@@ -172,14 +230,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		3A1CE8A1229AD43E00254714 /* Swizzi.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swizzi.framework;
+			remoteRef = 3A1CE8A0229AD43E00254714 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A1CE8A3229AD43E00254714 /* SwizziTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwizziTests.xctest;
+			remoteRef = 3A1CE8A2229AD43E00254714 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		3A2C44C2229AC81E000CED9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1CE88D229ACC7700254714 /* SwizziConfiguration.json in Resources */,
 				3A2C44D2229AC820000CED9D /* LaunchScreen.storyboard in Resources */,
 				3A2C44CF229AC820000CED9D /* Assets.xcassets in Resources */,
 				3A2C44CD229AC81E000CED9D /* Main.storyboard in Resources */,
+				3A1CE891229AD34200254714 /* BaseJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +276,7 @@
 			files = (
 				3A2C44CA229AC81E000CED9D /* ViewController.swift in Sources */,
 				3A2C44C8229AC81E000CED9D /* AppDelegate.swift in Sources */,
+				3A60BB9C229ADC1E0096B8CC /* SwiftModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +439,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwizziImageDownloader",
+				);
 				INFOPLIST_FILE = SwizziImageDownloader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +460,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwizziImageDownloader",
+				);
 				INFOPLIST_FILE = SwizziImageDownloader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
