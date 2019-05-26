@@ -43,7 +43,6 @@ internal class SwizziDataLoader {
     }
     func clearCache() {
         session.reset {
-            
         }
     }
 }

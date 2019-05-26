@@ -16,6 +16,10 @@ class DownloadOperation: Operation {
     var url: URL?
     let dataLoader = SwizziDataLoader()
     var downloadCompleted: DownloadOperationCompletion
+    var operationIsExecuting: Bool = false
+    override var isExecuting: Bool {
+        return operationIsExecuting
+    }
 
     init(url: URL, downloadCompleted: @escaping DownloadOperationCompletion) {
         self.url = url
@@ -23,17 +27,21 @@ class DownloadOperation: Operation {
     }
 
     override func start() {
-        super.main()
+        super.start()
         guard let urlPassed = url else {
             return
         }
         dataLoader.loadDataAsync(from: urlPassed) {(data, error) in
             self.downloadCompleted(data,error)
+            self.operationIsExecuting = false
         }
 
     }
     override func cancel() {
+        operationIsExecuting = false
         super.cancel()
         dataLoader.cancelDownload()
     }
+
+
 }

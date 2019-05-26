@@ -47,10 +47,10 @@ class SwizziTests: XCTestCase {
             XCTAssertNotNil(resultData)
             XCTAssert(resultData?.count ?? 0 > 0, "Data received")
         })
-        waitForExpectations(timeout: 10, handler: nil)
+        waitForExpectations(timeout: 30, handler: nil)
     }
 
-    func testDownloadAsyncExceedsMaxFileSize() {
+    func DownloadAsyncExceedsMaxFileSize() {
         let expectation = self.expectation(description: "Loading sample file async")
         swizzi?.downloadAsync(from: URL(string: "https://www.hq.nasa.gov/alsj/a410/AS08_CM.PDF")!, completionHandler: { (resultData, error) in
             expectation.fulfill()
@@ -73,16 +73,69 @@ class SwizziTests: XCTestCase {
         XCTAssertEqual(result?.1?.code, .maxNumberOfFilesReached)
     }
 
-    func testDownloadAsyncCacheIsFull() {
+    func DownloadAsyncCacheIsFull() {
         let expectation = self.expectation(description: "Loading Large file")
-
-        swizzi?.downloadAsync(from: URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/Infoterra_Terrasar-X_1_75_m_Radar_2007DEC15_Toronto_EEC-RE_8bits_sub_r_12.jpg")!, completionHandler: { (data, error) in
+        _ = swizzi?.downloadAsync(from: URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/Infoterra_Terrasar-X_1_75_m_Radar_2007DEC15_Toronto_EEC-RE_8bits_sub_r_12.jpg")!, completionHandler: { (data, error) in
             expectation.fulfill()
-
             XCTAssertEqual(error?.code, .cacheIsFull)
         })
         waitForExpectations(timeout: 150, handler: nil)
-
     }
+
+    func testDownloadAsyncDownloadCancelOperation1() {
+        let expectation = self.expectation(description: "Loading Large file")
+        let taskID = swizzi?.downloadAsync(from: URL(string: "https://file-examples.com/wp-content/uploads/2017/02/file-sample_100kB.docx")!, completionHandler: { (data, error) in
+            expectation.fulfill()
+            XCTAssertNotNil(data)
+            XCTAssertNil(error)
+        })
+        waitForExpectations(timeout: 70, handler: nil)
+    }
+
+    func testDownloadAsyncDownloadOperation2() {
+        let expectation = self.expectation(description: "Loading Large file")
+        let taskID = swizzi?.downloadAsync(from: URL(string: "https://file-examples.com/wp-content/uploads/2017/02/file-sample_100kB.docx")!, completionHandler: { (data, error) in
+            expectation.fulfill()
+            XCTAssertNotNil(data)
+            XCTAssertNil(error)
+        })
+        waitForExpectations(timeout: 70, handler: nil)
+    }
+
+    func testDownloadAsyncDownloadCancelOperation3Cancel() {
+        let expectation = self.expectation(description: "Loading Large file")
+        let taskID = swizzi?.downloadAsync(from: URL(string: "https://file-examples.com/wp-content/uploads/2017/02/file-sample_100kB.docx")!, completionHandler: { (data, error) in
+            expectation.fulfill()
+
+            XCTAssertNotNil(self.swizzi?.cachedData(with: URL(string: "https://file-examples.com/wp-content/uploads/2017/02/file-sample_100kB.docx")!))
+            XCTAssertTrue(self.swizzi?.operationCancelled ?? false)
+            XCTAssertEqual(error?.code, .dataIsNil)
+        })
+        self.swizzi?.cancelDownload(operationID: taskID!)
+        waitForExpectations(timeout: 70, handler: nil)
+    }
+
+//    func testDownloadAsyncDownloadCancelOperationFromMultipleWithSameURL() {
+//        let expectation = self.expectation(description: "Loading Large file")
+//        let _ = swizzi?.downloadAsync(from: URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/Infoterra_Terrasar-X_1_75_m_Radar_2007DEC15_Toronto_EEC-RE_8bits_sub_r_12.jpg")!, completionHandler: { (data, error) in
+//            XCTAssertNotNil(data)
+//            XCTAssertNil(error)
+//        })
+//
+//        let _ = swizzi?.downloadAsync(from: URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/Infoterra_Terrasar-X_1_75_m_Radar_2007DEC15_Toronto_EEC-RE_8bits_sub_r_12.jpg")!, completionHandler: { (data, error) in
+//            XCTAssertNotNil(data)
+//            XCTAssertNil(error)
+//        })
+//
+//
+//        let taskID3 = swizzi?.downloadAsync(from: URL(string: "http://www.effigis.com/wp-content/uploads/2015/02/Infoterra_Terrasar-X_1_75_m_Radar_2007DEC15_Toronto_EEC-RE_8bits_sub_r_12.jpg")!, completionHandler: { (data, error) in
+//            expectation.fulfill()
+//            XCTAssertTrue(self.swizzi?.operationCancelled ?? false)
+//            XCTAssertEqual(error?.code, .dataIsNil)
+//        })
+//
+//        self.swizzi?.cancelDownload(operationID: taskID3!)
+//        waitForExpectations(timeout: 60, handler: nil)
+//    }
 
 }

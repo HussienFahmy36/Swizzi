@@ -33,7 +33,6 @@ extension Swizzi {
 
             } else {error = SwizziError(title: .fileSizeExceedsLimit, code: .fileSizeExceedsLimit)}
         }
-        if error != nil {dataLoader.clearCache()}
         return error
     }
 

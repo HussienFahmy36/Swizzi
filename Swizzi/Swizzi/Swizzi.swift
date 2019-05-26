@@ -18,6 +18,7 @@ class Swizzi {
     internal var cachedItemsKeys: [String: Int] = [:]
     internal var donwloadOperations: [Operation] = []
     internal var queue = OperationQueue()
+    internal var operationCancelled: Bool = false
     //MARK: - framework API
     init(with configurationFileBundle: Bundle) {
         configureFromFile(with: configurationFileBundle)
@@ -47,8 +48,12 @@ class Swizzi {
     }
 
     public func cancelDownload(operationID: Int) {
-        if let operation = queue.operations.filter({($0 as? DownloadOperation)?.operationID == operationID}).first {
-            operation.cancel()
+        for operation in queue.operations {
+            let downloadOperation = (operation as? DownloadOperation)
+            if downloadOperation?.operationID == operationID, downloadOperation?.isExecuting ?? false {
+                downloadOperation?.cancel()
+                operationCancelled = downloadOperation?.isCancelled ?? false
+            }
         }
     }
 
