@@ -5,7 +5,7 @@
 
 import Foundation
 
-// MARK: - PhotoElement
+// MARK: - PinModel
 class PinModel: Codable {
     let photoId: String
     let createdAt: String

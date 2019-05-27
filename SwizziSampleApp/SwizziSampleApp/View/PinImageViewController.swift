@@ -10,7 +10,11 @@ import UIKit
 
 class PinImageViewController: UIViewController {
 
+    var viewModel: PinViewModel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Pin Details"
     }
+    
 }

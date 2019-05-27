@@ -10,7 +10,7 @@
 		3A7EDE0C229BEDD900C38011 /* PinsDataWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDE0B229BEDD900C38011 /* PinsDataWorker.swift */; };
 		3A7EDE0E229BF30600C38011 /* PinsViewController+CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDE0D229BF30600C38011 /* PinsViewController+CollectionViewDelegate.swift */; };
 		3A7EDE11229BF4FB00C38011 /* PinCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDE10229BF4FB00C38011 /* PinCardViewModel.swift */; };
-		3A7EDE1A229C0E0600C38011 /* PinCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDE17229C0E0600C38011 /* PinCardCell.swift */; };
+		3A7EDE1A229C0E0600C38011 /* PinCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDE17229C0E0600C38011 /* PinCard.swift */; };
 		3A7EDE1B229C0E0600C38011 /* PinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDE18229C0E0600C38011 /* PinsViewController.swift */; };
 		3A7EDE1C229C0E0600C38011 /* PinImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EDE19229C0E0600C38011 /* PinImageViewController.swift */; };
 		3AC9A938229AEBF700178151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9A937229AEBF700178151 /* AppDelegate.swift */; };
@@ -55,7 +55,7 @@
 		3A7EDE0B229BEDD900C38011 /* PinsDataWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsDataWorker.swift; sourceTree = "<group>"; };
 		3A7EDE0D229BF30600C38011 /* PinsViewController+CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PinsViewController+CollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		3A7EDE10229BF4FB00C38011 /* PinCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCardViewModel.swift; sourceTree = "<group>"; };
-		3A7EDE17229C0E0600C38011 /* PinCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCardCell.swift; sourceTree = "<group>"; };
+		3A7EDE17229C0E0600C38011 /* PinCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCard.swift; sourceTree = "<group>"; };
 		3A7EDE18229C0E0600C38011 /* PinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinsViewController.swift; sourceTree = "<group>"; };
 		3A7EDE19229C0E0600C38011 /* PinImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinImageViewController.swift; sourceTree = "<group>"; };
 		3AC9A934229AEBF700178151 /* SwizziSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwizziSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +122,7 @@
 		3A7EDE16229C0E0600C38011 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3A7EDE17229C0E0600C38011 /* PinCardCell.swift */,
+				3A7EDE17229C0E0600C38011 /* PinCard.swift */,
 				3A7EDE18229C0E0600C38011 /* PinsViewController.swift */,
 				3A7EDE19229C0E0600C38011 /* PinImageViewController.swift */,
 			);
@@ -345,7 +345,7 @@
 				3AD81330229B432700E6731C /* PinterestLayoutDelegate.swift in Sources */,
 				3A7EDE0C229BEDD900C38011 /* PinsDataWorker.swift in Sources */,
 				3A7EDE1B229C0E0600C38011 /* PinsViewController.swift in Sources */,
-				3A7EDE1A229C0E0600C38011 /* PinCardCell.swift in Sources */,
+				3A7EDE1A229C0E0600C38011 /* PinCard.swift in Sources */,
 				3AC9A95E229AECCA00178151 /* PinModel.swift in Sources */,
 				3A7EDE11229BF4FB00C38011 /* PinCardViewModel.swift in Sources */,
 				3A7EDE1C229C0E0600C38011 /* PinImageViewController.swift in Sources */,

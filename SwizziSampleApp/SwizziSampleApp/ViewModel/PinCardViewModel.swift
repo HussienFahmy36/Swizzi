@@ -40,7 +40,7 @@ class PinViewModel {
         guard let modelToUser = model else {
             return
         }
-        let pinImagePath = modelToUser.urls.regular
+        let pinImagePath = modelToUser.urls.raw
         pinImageTaskID = swizzi.downloadAsync(from: URL.urlFrom(absolutePath: pinImagePath), completionHandler: {[weak self] (data, error) in
             guard let `self` = self else {
                 return
@@ -65,7 +65,7 @@ class PinViewModel {
         guard let modelToUser = model else {
             return
         }
-        let pinImagePath = modelToUser.user.profileImage.small
+        let pinImagePath = modelToUser.user.profileImage.large
         userProfileImageTaskID = swizzi.downloadAsync(from: URL.urlFrom(absolutePath: pinImagePath), completionHandler: {[weak self] (data, error) in
             guard let `self` = self else {
                 return

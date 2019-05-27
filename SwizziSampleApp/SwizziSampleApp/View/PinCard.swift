@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PinCardCell: UICollectionViewCell {
+class PinCard: UICollectionViewCell {
 
     @IBOutlet weak var userProfileImage: UIImageView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
@@ -27,6 +27,7 @@ class PinCardCell: UICollectionViewCell {
 
     func configure(with viewModel: PinViewModel) {
         loadingIndicator.isHidden = false
+        self.placeHolderCardImage.isHidden = true
         loadingIndicator.startAnimating()
         viewModel.downloadUserProfileImage {
             viewModel.downloadPinImage {

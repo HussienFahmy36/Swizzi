@@ -21,13 +21,16 @@ extension PinsViewController {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardView", for: indexPath) as! PinCardCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardView", for: indexPath) as! PinCard
         cell.configure(with: viewModels[indexPath.row])
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        let identifier = "PinImageViewController"
+        if let pinDetailsVC = storyboard?.instantiateViewController(withIdentifier: identifier) as? PinImageViewController {
+            self.navigationController?.pushViewController(pinDetailsVC, animated: true)
+        }
     }
 
 }
