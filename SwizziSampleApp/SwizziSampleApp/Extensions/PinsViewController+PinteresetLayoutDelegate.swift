@@ -13,7 +13,7 @@ extension PinsViewController: PinterestLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         heightForPhotoAtIndexPath indexPath:IndexPath) -> CGFloat {
 
-        return CGFloat(cardsItems[indexPath.item].height / scaleFactor) 
+        return CGFloat(viewModels[indexPath.item].height / scaleFactor) 
     }
 
 }

@@ -6,7 +6,7 @@
 import Foundation
 
 // MARK: - PhotoElement
-class PhotoElement: Codable {
+class PinModel: Codable {
     let photoId: String
     let createdAt: String
     let width, height: Int
@@ -170,7 +170,7 @@ class ProfileImage: Codable {
     }
 }
 
-typealias Photo = [PhotoElement]
+typealias Photo = [PinModel]
 
 // MARK: - Encode/decode helpers
 
