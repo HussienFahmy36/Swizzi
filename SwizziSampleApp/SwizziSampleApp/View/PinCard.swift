@@ -47,7 +47,7 @@ class PinCard: UICollectionViewCell {
                     self.loadingIndicator.isHidden = true
                     self.cardImage.image = viewModel.pinImage
                     if self.cardImage.image?.size == CGSize.zero || self.cardImage.image == nil {
-                        self.placeHolderCardImage.text = "Image not found"
+                        self.placeHolderCardImage.text = viewModel.errorMessage ?? "Image not found"
                         self.placeHolderCardImage.isHidden = false
                         self.cardImage.isHidden = true
                     }
