@@ -11,10 +11,6 @@ import UIKit
 
 
 extension PinsViewController {
-
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        collectionViewLayout?.invalidateLayout()
-    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModels.count
