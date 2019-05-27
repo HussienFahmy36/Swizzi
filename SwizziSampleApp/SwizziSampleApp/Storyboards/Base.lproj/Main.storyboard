@@ -31,7 +31,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xb0-VT-sAn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="321" height="394.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="321" height="379.5"/>
                                                 </imageView>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="zo2-Qd-MZJ">
                                                     <rect key="frame" x="150.5" y="215" width="20" height="20"/>
@@ -44,7 +44,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Uy-7Q-SBD">
-                                                    <rect key="frame" x="0.0" y="398.5" width="30" height="30"/>
+                                                    <rect key="frame" x="0.0" y="383.5" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="3F8-ks-QnY"/>
                                                         <constraint firstAttribute="height" constant="30" id="Atm-Dw-tA0"/>
@@ -57,7 +57,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvg-kX-Jdo">
-                                                    <rect key="frame" x="44" y="406" width="257" height="14.5"/>
+                                                    <rect key="frame" x="44" y="391" width="257" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                     <color key="textColor" red="1" green="0.20747662380000001" blue="0.20516745250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                                             <constraint firstAttribute="trailing" secondItem="xb0-VT-sAn" secondAttribute="trailing" id="HC3-fL-dJr"/>
                                             <constraint firstItem="Wvg-kX-Jdo" firstAttribute="leading" secondItem="9Uy-7Q-SBD" secondAttribute="trailing" constant="14" id="Knv-Dm-Cva"/>
                                             <constraint firstItem="9Uy-7Q-SBD" firstAttribute="top" secondItem="xb0-VT-sAn" secondAttribute="bottom" constant="4" id="Qv5-6T-pFE"/>
-                                            <constraint firstItem="SwN-wi-YPI" firstAttribute="top" secondItem="Wvg-kX-Jdo" secondAttribute="bottom" constant="15" id="SpK-aM-Ob2"/>
+                                            <constraint firstItem="SwN-wi-YPI" firstAttribute="top" secondItem="Wvg-kX-Jdo" secondAttribute="bottom" constant="30" id="SpK-aM-Ob2"/>
                                             <constraint firstItem="xb0-VT-sAn" firstAttribute="leading" secondItem="Rei-XW-6U4" secondAttribute="leading" id="SxU-WS-mKx"/>
                                             <constraint firstItem="Wvg-kX-Jdo" firstAttribute="centerY" secondItem="9Uy-7Q-SBD" secondAttribute="centerY" id="e0o-DD-ieR"/>
                                             <constraint firstItem="Wvg-kX-Jdo" firstAttribute="trailing" secondItem="SwN-wi-YPI" secondAttribute="trailing" id="ebU-gQ-nUl"/>

@@ -31,7 +31,12 @@ class PinCard: UICollectionViewCell {
         loadingIndicator.isHidden = false
         self.placeHolderCardImage.isHidden = true
         loadingIndicator.startAnimating()
-        viewModel.downloadUserProfileImage {
+        viewModel.downloadUserProfileImage {[weak self] in
+            guard let `self` = self else {
+                return
+            }
+            
+            self.userProfileImage.image = viewModel.pinUserProfileImage
             viewModel.downloadPinImage {
                 DispatchQueue.main.async { [weak self] in
                     guard let `self` = self else {
@@ -40,7 +45,6 @@ class PinCard: UICollectionViewCell {
                     self.loadingIndicator.stopAnimating()
                     self.animateImage()
                     self.loadingIndicator.isHidden = true
-                    self.userProfileImage.image = viewModel.pinUserProfileImage
                     self.cardImage.image = viewModel.pinImage
                     if self.cardImage.image?.size == CGSize.zero || self.cardImage.image == nil {
                         self.placeHolderCardImage.text = "Image not found"
@@ -77,16 +81,17 @@ class PinCard: UICollectionViewCell {
             }
         }
     }
+
     func animateImage() {
         if !viewAnimated {
             self.cardImage.transform = CGAffineTransform(scaleX: 0, y: 0)
-            UIView.animate(withDuration: 1) {[weak self] in
+            UIView.animate(withDuration: 1, animations: {[weak self] in
                 guard let `self` = self else {
                     return
                 }
                 self.cardImage.transform = CGAffineTransform(scaleX: 1, y: 1)
                 self.viewAnimated = true
-            }
+            })
         }
     }
 }

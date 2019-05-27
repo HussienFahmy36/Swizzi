@@ -28,5 +28,4 @@ extension PinsViewController {
             self.navigationController?.pushViewController(pinDetailsVC, animated: true)
         }
     }
-
 }
