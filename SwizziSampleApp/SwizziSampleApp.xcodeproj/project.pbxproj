@@ -20,11 +20,11 @@
 		3AC9A94D229AEBF800178151 /* SwizziSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9A94C229AEBF800178151 /* SwizziSampleAppTests.swift */; };
 		3AC9A95E229AECCA00178151 /* PinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9A95D229AECCA00178151 /* PinModel.swift */; };
 		3AC9A960229AECD600178151 /* SwizziConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9A95F229AECD600178151 /* SwizziConfiguration.json */; };
-		3AD81328229B3A6A00E6731C /* Swizzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD81327229B3A6A00E6731C /* Swizzi.framework */; };
-		3AD8132A229B3A7300E6731C /* Swizzi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD81327229B3A6A00E6731C /* Swizzi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3AD8132D229B425500E6731C /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8132C229B425500E6731C /* PinterestLayout.swift */; };
 		3AD81330229B432700E6731C /* PinterestLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8132F229B432700E6731C /* PinterestLayoutDelegate.swift */; };
 		3AD81333229B43FC00E6731C /* PinsViewController+PinteresetLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD81332229B43FC00E6731C /* PinsViewController+PinteresetLayoutDelegate.swift */; };
+		3AE8794422DA3C5B00921E85 /* Swizzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8794022DA3C5000921E85 /* Swizzi.framework */; };
+		3AE8794522DA3C5B00921E85 /* Swizzi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE8794022DA3C5000921E85 /* Swizzi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,20 @@
 			remoteGlobalIDString = 3AC9A933229AEBF700178151;
 			remoteInfo = SwizziSampleApp;
 		};
+		3AE8793F22DA3C5000921E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AE8793A22DA3C5000921E85 /* Swizzi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AF7F93D22933BBB002423D4;
+			remoteInfo = Swizzi;
+		};
+		3AE8794122DA3C5000921E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AE8793A22DA3C5000921E85 /* Swizzi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AF7F94622933BBB002423D4;
+			remoteInfo = SwizziTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +58,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3AD8132A229B3A7300E6731C /* Swizzi.framework in Embed Frameworks */,
+				3AE8794522DA3C5B00921E85 /* Swizzi.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,10 +84,10 @@
 		3AC9A957229AEC0F00178151 /* Swizzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swizzi.framework; path = "/Users/hussiengamalmohammed/Documents/HussienWorkspace/Personal/Swizzi Github/Swizzi/SwizziSampleApp/SwizziSampleApp/Swizzi.framework"; sourceTree = "<absolute>"; };
 		3AC9A95D229AECCA00178151 /* PinModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinModel.swift; sourceTree = "<group>"; };
 		3AC9A95F229AECD600178151 /* SwizziConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SwizziConfiguration.json; sourceTree = "<group>"; };
-		3AD81327229B3A6A00E6731C /* Swizzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swizzi.framework; sourceTree = "<group>"; };
 		3AD8132C229B425500E6731C /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		3AD8132F229B432700E6731C /* PinterestLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayoutDelegate.swift; sourceTree = "<group>"; };
 		3AD81332229B43FC00E6731C /* PinsViewController+PinteresetLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PinsViewController+PinteresetLayoutDelegate.swift"; sourceTree = "<group>"; };
+		3AE8793A22DA3C5000921E85 /* Swizzi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swizzi.xcodeproj; path = ../../Swizzi/Swizzi.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD81328229B3A6A00E6731C /* Swizzi.framework in Frameworks */,
+				3AE8794422DA3C5B00921E85 /* Swizzi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +150,7 @@
 				3AC9A94B229AEBF800178151 /* SwizziSampleAppTests */,
 				3AC9A935229AEBF700178151 /* Products */,
 				3AD81317229B234300E6731C /* Recovered References */,
+				3AE8794322DA3C5B00921E85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +166,7 @@
 		3AC9A936229AEBF700178151 /* SwizziSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AE8793A22DA3C5000921E85 /* Swizzi.xcodeproj */,
 				3A7EDE16229C0E0600C38011 /* View */,
 				3A7EDE15229C0DD500C38011 /* Storyboards */,
 				3A7EDE12229C001000C38011 /* Workers */,
@@ -205,7 +221,6 @@
 		3AD8131A229B248800E6731C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3AD81327229B3A6A00E6731C /* Swizzi.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -233,6 +248,22 @@
 				3A7EDE0D229BF30600C38011 /* PinsViewController+CollectionViewDelegate.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AE8793B22DA3C5000921E85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AE8794022DA3C5000921E85 /* Swizzi.framework */,
+				3AE8794222DA3C5000921E85 /* SwizziTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AE8794322DA3C5B00921E85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +335,12 @@
 			mainGroup = 3AC9A92B229AEBF700178151;
 			productRefGroup = 3AC9A935229AEBF700178151 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3AE8793B22DA3C5000921E85 /* Products */;
+					ProjectRef = 3AE8793A22DA3C5000921E85 /* Swizzi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3AC9A933229AEBF700178151 /* SwizziSampleApp */,
@@ -311,6 +348,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3AE8794022DA3C5000921E85 /* Swizzi.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swizzi.framework;
+			remoteRef = 3AE8793F22DA3C5000921E85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AE8794222DA3C5000921E85 /* SwizziTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwizziTests.xctest;
+			remoteRef = 3AE8794122DA3C5000921E85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3AC9A932229AEBF700178151 /* Resources */ = {

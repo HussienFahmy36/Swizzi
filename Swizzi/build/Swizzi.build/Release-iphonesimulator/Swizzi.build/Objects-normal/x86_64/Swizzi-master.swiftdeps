@@ -1,0 +1,16 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "c294c1cc5ca82246cc2465cef9f02e10"
+build_time: [1563034470, 725019000]
+inputs:
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Utils/SwizziCache.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Protocols/SwizziParsable.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Utils/SwizziDataLoader.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Model/SwizziConfiguration.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Model/SwizziError.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/extensions/Swizzi+CacheList.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Protocols/SwizziParser.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Swizzi.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/extensions/Swizzi+Configure.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Protocols/SwizziErrorProtocol.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Utils/SwizziJsonParser.swift": [9223372036, 854775807]
+  "/Users/hussiengamalmohammed/Desktop/Swizzi/Swizzi/Swizzi/Model/DownloadOperation.swift": [9223372036, 854775807]
